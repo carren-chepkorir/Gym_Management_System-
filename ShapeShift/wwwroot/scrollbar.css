@@ -1,0 +1,17 @@
+﻿
+
+
+div.scrollmenu::-webkit-scrollbar {
+    width: 5px;
+}
+
+div.scrollmenu::-webkit-scrollbar-track {
+    background: white;
+}
+div.scrollmenu::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 6px;
+}
+
+
+

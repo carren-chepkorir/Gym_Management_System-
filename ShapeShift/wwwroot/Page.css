@@ -1,0 +1,18 @@
+﻿@media print {
+    body {
+        background: none;
+        -ms-zoom: 1.665;
+    }
+
+    div.portrait, div.landscape {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+    }
+
+    div.landscape {
+        transform: rotate(270deg) translate(-276mm, 0);
+        transform-origin: 0 0;
+    }
+}

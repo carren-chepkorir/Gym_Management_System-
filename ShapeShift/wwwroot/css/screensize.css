@@ -1,0 +1,14 @@
+﻿@media screen and (max-width: 600px) {
+    .bigdiv {
+        display: none;
+    }
+  
+    
+}
+@media screen and (min-width: 600px) {
+    .backarrow {
+        display: none;
+    }
+  
+    
+}

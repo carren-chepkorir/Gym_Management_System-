@@ -1,0 +1,81 @@
+﻿
+<aside class="main-sidebar" style="background-color:gray;color:white;box-shadow: 1px 6px 22px 3px rgba(0,0,0,0.1);">
+
+ 
+    <section class="sidebar" style="height: auto;">
+
+        <ul class="sidebar-menu treeview" data-widget="tree">
+
+            <li class="treeview" style="height: auto;color:ghostwhite">
+                <a asp-action="Index" asp-controller="Home">
+                    <i style="color:ghostwhite" class="fal fa-tachometer-alt-slowest"></i>
+                    <span style="color:white">
+                        <b> Admin Dashboard</b>
+
+                    </span>
+                </a>
+            
+            </li>
+                <li class="treeview" style="height: auto;color:black">
+                    <a href="#">
+                    <i style="color:black" class="fa fa-tasks" aria-hidden="true"></i>
+
+
+                        <span style="color:ghostwhite">Members </span>
+                        <span class="pull-right-container">
+                            <i style="color:ghostwhite" class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu" style="display: none;">
+                        <li>
+                            <a asp-action="Index" asp-controller="Admin" asp-route-Id="">
+                                <i style="color:ghostwhite" class="fa fa-eye" aria-hidden="true" ></i>Manage Members
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            <li class="treeview" style="height: auto;color:black">
+                <a href="#">
+                    <i style="color:black" class="fa fa-tasks" aria-hidden="true"></i>
+
+
+                    <span style="color:ghostwhite">Shifts </span>
+                    <span class="pull-right-container">
+                        <i style="color:ghostwhite" class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu" style="display: none;">
+                    <li>
+                        <a asp-action="AddTrainerViewList" asp-controller="Admin" asp-route-Id="">
+                            <i style="color:ghostwhite" class="fa fa-eye" aria-hidden="true"></i>Manage Trainers
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+                <li class="treeview" style="height: auto;color:black">
+                    <a href="#">
+                    <i style="color:black" class="fa fa-tasks" aria-hidden="true"></i>
+
+
+                        <span style="color:black">Trainers </span>
+                        <span class="pull-right-container">
+                            <i style="color:black" class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                <ul class="treeview-menu" style="display: none;">
+                    <li>
+                        <a asp-action="AddShiftViewList" asp-controller="Admin" asp-route-Id="">
+                            <i style="color:ghostwhite" class="fa fa-eye" aria-hidden="true"></i>Manage Shifts
+                        </a>
+                    </li>
+
+                </ul>
+                    
+            
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<script src="~/dist/js/adminlte.min.js"></script>

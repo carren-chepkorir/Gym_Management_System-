@@ -1,0 +1,64 @@
+﻿@model List<ShapeShift.Models.Trainer>
+
+
+<h2 class="text-center">Trainers in the System</h2>
+
+
+
+   <div class="container-fluid">
+
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <partial name="_Search" />
+        </div>
+
+        <div class="col-12 col-md-4 text-center mt-3">
+            <a asp-action="AddTrainer">
+                <div class=" btn-sm btn-dark" style="background-color:black;color:white;padding:3px;margin:3px;text-align:center;border-radius:3px">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <span>
+                        Add New Trainer
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+    
+ 
+       
+        <table class="table-responsive-sm table-stripped table-bordered table-sm container">
+            <thead style="background-color:aliceblue; color:black" >
+              <tr>
+                 
+                  <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th colspan-3"> Actions</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var trainer in Model)
+            {
+            <tr>
+                
+                   <td>@trainer.FirstName</td>
+                    <td>@trainer.LastName</td>
+                    <td>@trainer.Phone</td>
+                    <td>@trainer.Email</td>
+                    <td>
+                    <a asp-action="" data-toggle="modal" data-target="#Edit_@trainer.TrainerID" style="color:blue;margin-right:20px;margin-left:20px" asp-route-id=""><i class="fa fa-pencil" aria-hidden="true"></i> <span>Edit</span> </a>
+
+                    <a asp-action="" data-toggle="modal" data-target="#Delete_@trainer.TrainerID" style="color:red;margin-right:20px" asp-route-id=""><i class="fa fa-pencil"  aria-hidden="true"></i>  <span>Delete</span> </a>
+                
+                    </td>
+                    
+             </tr>   
+            }
+        </tbody>
+
+        </table>
+
+   

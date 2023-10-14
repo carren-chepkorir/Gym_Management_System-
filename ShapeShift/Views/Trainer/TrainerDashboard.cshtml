@@ -1,0 +1,34 @@
+﻿@model ShapeShift.Models.TrainerDashboardViewModel
+
+<h2>Welcome, Trainer!</h2>
+
+<h3>Upcoming Shifts</h3>
+<ul>
+    @foreach (var shift in Model.UpcomingShifts)
+    {
+        <li>@shift.ShiftTime.ToShortDateString() - @shift.ShiftTime</li>
+    }
+</ul>
+
+<h3>Attendance Records</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Member FirstName</th>
+            <th>Member LastName</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model.AttendanceRecords)
+        {
+            <tr>
+                <td>@record.AttendanceDate.ToShortDateString()</td>
+                <td>@record.Member.FirstName</td>
+                <td>@record.Member.LastName</td>
+                <td>@(record.Present ? "Present" : "Absent")</td>
+            </tr>
+        }
+    </tbody>
+</table>

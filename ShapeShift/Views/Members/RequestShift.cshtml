@@ -1,0 +1,39 @@
+﻿@model ShiftRequestViewModel
+@if (TempData["Success"] == null) { }
+else
+{
+    <div class="alert alert-sucess alert-dismissible">
+        <strong> Sucess...</strong>@TempData["Success"]
+    </div>
+}
+
+<h1>Shift Request Form</h1>
+
+<form asp-action="RequestShift" method="post">
+    <input type="hidden" asp-for="ShiftId" />
+
+    <div class="form-group">
+        <label asp-for="ShiftName">Shift Name</label>
+        <input asp-for="ShiftName" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ShiftTime">Shift Date and Time</label>
+        <input asp-for="ShiftTime" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TrainerName">Trainer Name</label>
+        <input asp-for="TrainerName" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MemberName">Member Name</label>
+        <input asp-for="MemberName" class="form-control" />
+        <span asp-validation-for="MemberName" class="text-danger"></span>
+    </div>
+
+    <!-- Add other form fields as needed -->
+
+    <button type="submit" class="btn btn-primary">Submit Request</button>
+</form>

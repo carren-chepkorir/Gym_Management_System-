@@ -1,0 +1,28 @@
+﻿@media print {
+    @page {
+        size: landscape;
+        width: 210mm;
+        height: 297mm;
+        padding: 2cm;
+        margin: 0;
+        background: white;
+        /*-webkit-print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+        -ms-print-color-adjust: exact;
+        print-color-adjust: exact;*/
+    }
+}
+
+.page {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    border: solid 0px blue;
+    margin: 10mm 15mm 10mm 15mm; /* margin you want for the content */
+}
+
+html {
+    background-color: red;
+    margin: 0px; /* this affects the margin on the html before sending to printer */
+}

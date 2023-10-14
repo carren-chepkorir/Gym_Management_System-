@@ -1,0 +1,23 @@
+﻿@model ShapeShift.Models.Shift
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Set your layout page here
+}
+<form asp-action="AddShift" asp-controller="Admin" method="post">
+    
+    <div class="form-group">
+        <label asp-for="ShiftName">Shift Name:</label>
+        <input asp-for="ShiftName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TrainerID">Trainer ID:</label>
+        <input asp-for="TrainerID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ShiftTime">Last Name:</label>
+        <input asp-for="ShiftTime" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Add Shift</button>
+
+</form>

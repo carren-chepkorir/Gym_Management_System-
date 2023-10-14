@@ -1,0 +1,7 @@
+﻿.container_2 {
+    -webkit-transform: rotate(180deg); /* Safari and Chrome */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -o-transform: rotate(180deg); /* Opera */
+    transform: rotate(180deg);
+}

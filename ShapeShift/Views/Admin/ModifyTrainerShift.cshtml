@@ -1,0 +1,29 @@
+﻿@model ModifyTrainerShiftModel
+
+<h1>Modify Trainer Shift</h1>
+
+<form asp-action="ModifyTrainerShift" method="post">
+    <div class="form-group">
+        <label for="TrainerId">Select Trainer:</label>
+        <select asp-for="TrainerId" class="form-control">
+            @foreach (var trainer in ViewBag.Trainers)
+            {
+                <option value="@trainer.TrainerId">@trainer.TrainerName</option>
+            }
+        </select>
+        <span class="text-danger">@Html.ValidationMessageFor(model => model.TrainerId)</span>
+    </div>
+
+    <div class="form-group">
+        <label for="NewShiftId">Select New Shift:</label>
+        <select asp-for="NewShiftId" class="form-control">
+            @foreach (var shift in ViewBag.Shifts)
+            {
+                <option value="@shift.ShiftId">@shift.ShiftName</option>
+            }
+        </select>
+        <span class="text-danger">@Html.ValidationMessageFor(model => model.NewShiftId)</span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Modify Shift</button>
+</form>

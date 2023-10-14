@@ -1,0 +1,22 @@
+﻿@model ShapeShift.Models.MarkAttendanceViewModel
+
+<h2>Mark Attendance for @Model.Shift.ShiftTime.ToShortDateString() Shift</h2>
+
+<form asp-action="MarkAttendance" method="post">
+    <input type="hidden" asp-for="Shift.ShiftID" />
+
+    <h3>Select Members Present:</h3>
+    <ul>
+        @foreach (var member in Model.MembersInShift)
+        {
+            <li>
+                <label>
+                    <input type="checkbox" asp-for="SelectedMemberIds" value="@member.MemberID" />
+                    @member.FirstName
+                </label>
+            </li>
+        }
+    </ul>
+
+    <button type="submit">Submit Attendance</button>
+</form>

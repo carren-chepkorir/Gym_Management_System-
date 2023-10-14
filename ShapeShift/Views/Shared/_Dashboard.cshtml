@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  @*  @using Newtonsoft.Json
+    @using KILI.Session;
+    @using Microsoft.AspNetCore.Http
+    @inject IHttpContextAccessor HttpContextAccessor*@
+
+
+    <link href="~/Syncfussion/styles/material.css" rel="stylesheet" />
+    <script src="~/Syncfussion/scripts/ej2.min.js"></script>
+    <link href="~/css/Scrollbar.css" rel="stylesheet" />
+    <meta name="msapplication-navbutton-color" content="black">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="black">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="black">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="~/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="~/dist/css/skins/skin-blue.min.css">
+    <script src="~/dist/js/JavaScript.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShapeShift</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body oncontextmenu="return false;" class="hold-transition skin-blue sidebar-mini bg-white text-black" style="color:black;font-family:Calibri">
+    <div class="">
+        <header class="main-header">
+            <a href="#" class="logo" style="background-color:white">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">  <img src="~/Images/Gym.png" style="width:auto;height:30px;" class="user-image" alt="F"></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg" style="color:black">
+                    <img src="~/Icons/LOGO.png" style="width:auto;height:50px;" class="user-image" alt="">
+                    <span>ShapeShift</span>
+                </span>
+            </a>
+       
+        </header>
+
+        <style>
+            .Categoryyy {
+                color: black;
+            }
+
+                .Categoryyy:hover {
+                    background-color: gray;
+                    border-left: solid 3px black;
+                }
+        </style>
+
+        <partial name="_DshboardsideMenu" />
+        <div class="content-wrapper" style="background-color:#f0f2f5;font-family:'Century Gothic';font-size:small">
+
+            @{
+                var image = "image Url here";
+
+            }
+            <div style="padding-left:24px;padding-right:24px;padding-top:6px;padding-bottom:6px;background-color:#d48232">
+                <div class="row">
+                    <div class="col-sm-6 col-6 text-left">
+                        <img data-toggle="push-menu" style="height:30px;width:30px" src="~/Icons/right-arrow.png" />
+                    </div>
+                    <div class="col-sm-6 col-6 text-right">
+                        <a class="dropdown-toggle "
+                           href="#"
+                           id="navbarDropdownMenuLink"
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-expanded="false">
+                            <img src="~/Icons/ProfilePic.png"
+                                 class="rounded-circle"
+                                 height="20"
+                                 onerror="this.src='/Icons/ProfilePic.png'"
+                                 style="border:solid 2px white"
+                                 alt=""
+                                 loading="lazy" />
+                            <span style="font-family:Calibri;color:white">"name"</span>
+                        </a>
+                        <ul style="background-color:white;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);font-family:Calibri" class="dropdown-menu">
+                            @*<li><a class="dropdown-item" asp-action="MyAccount" asp-controller="Home">Profile</a></li>
+
+                            <li><a class="dropdown-item" asp-action="Settings" asp-controller="customer_Home">Settings</a></li>*@
+                            <li class="dropdown-header">
+                                <a asp-action="Logoff" style="color:red" asp-controller="Home">  Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            @RenderBody()
+        </div>
+
+        @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - CONNIE - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
+
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+            </script>
+        </environment>
+        <script>
+
+  
+
+
+        <script src="~/javascript/JavaScript.js"></script>
+        <script src="~/js/site.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <ejs-scripts></ejs-scripts>
+        @RenderSection("Scripts", required: false)
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model List<Shift>
+
+<h2>Member Dashboard</h2>
+
+@if (Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Trainer Name</th>
+                <th>Shift Name</th>
+
+                <th>Shift Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var shift in Model)
+            {
+                <tr>
+                    <td>@shift.Trainer.FirstName @shift.Trainer.LastName</td>
+                    <td>@shift.ShiftName</td>
+                    <td>@shift.ShiftTime.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>
+                        <a href="@Url.Action("RequestShift", "Members", new { shiftId = shift.ShiftID })" class="btn btn-primary">Request Shift</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No available shifts at the moment.</p>
+}

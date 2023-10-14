@@ -1,0 +1,223 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="wwwroot\Carousel\Carousel.webp" />
+    <None Include="wwwroot\Carousel\Carousel1.webp" />
+    <None Include="wwwroot\Carousel\Carousel6.webp" />
+    <None Include="wwwroot\Carousel\Carousel7.webp" />
+    <None Include="wwwroot\dist\css\adminlte.css.map" />
+    <None Include="wwwroot\dist\css\adminlte.min.css.map" />
+    <None Include="wwwroot\dist\js\adminlte.js" />
+    <None Include="wwwroot\dist\js\adminlte.min.js" />
+    <None Include="wwwroot\dist\js\demo.js" />
+    <None Include="wwwroot\dist\js\JavaScript.js" />
+    <None Include="wwwroot\dist\js\pages\dashboard.js" />
+    <None Include="wwwroot\dist\js\pages\dashboard2.js" />
+    <None Include="wwwroot\Documents\Emmanuel Kili CV232657711.docx" />
+    <None Include="wwwroot\Documents\KILI EMMANUEL STATEMENT232629270.pdf" />
+    <None Include="wwwroot\Documents\PROFILEPUC234315527.webp" />
+    <None Include="wwwroot\Documents\Setyon232138851.pdf" />
+    <None Include="wwwroot\Icons\005-sigma.svg" />
+    <None Include="wwwroot\Icons\undraw_empty_cart_co35.svg" />
+    <None Include="wwwroot\Images\Area8.webp" />
+    <None Include="wwwroot\JavaScript.js" />
+    <None Include="wwwroot\javascript\JavaScript.js" />
+    <None Include="wwwroot\javascript\jquery\dist\jquery.js" />
+    <None Include="wwwroot\javascript\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\javascript\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\Syncfussion\scripts\bluebird.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\chart\financial-data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\chart\images\Download.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\chart\images\pause.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\chart\images\Play.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\chart\images\Tick.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\chart\stock-chart-data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\common.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\crossroads.js" />
+    <None Include="wwwroot\Syncfussion\scripts\data-service.js" />
+    <None Include="wwwroot\Syncfussion\scripts\datasource.js" />
+    <None Include="wwwroot\Syncfussion\scripts\documenteditor\import-helper.js" />
+    <None Include="wwwroot\Syncfussion\scripts\ej2.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\ej2.min.js.map" />
+    <None Include="wwwroot\Syncfussion\scripts\elasticlunr.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\fuse.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\generatedata.js" />
+    <None Include="wwwroot\Syncfussion\scripts\hasher.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\highlight.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\Images\Gantt\face-mask.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Images\Gantt\moments.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Images\Gantt\oscar.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\index.js" />
+    <None Include="wwwroot\Syncfussion\scripts\js-signals.min.js" />
+    <None Include="wwwroot\Syncfussion\scripts\locale-string.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\africa.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\africasingle.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\australia.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\curvedlinemarkers.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\defaultdata.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\electiondata.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\flightroutes.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\highlightmarkers.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\indianpopulation.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\markercluster.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\markerlocation.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\navigationline.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\oklahoma.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\population.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\populationdensity.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\ProductWorth.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\randomcountrydata.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\salescontinent.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\SouthAmericanCountryCapitals.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\unocontries.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\usMap.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\usPopulation.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\worldcup.js" />
+    <None Include="wwwroot\Syncfussion\scripts\MapsData\world_continent.js" />
+    <None Include="wwwroot\Syncfussion\scripts\pivotData\data-source.js" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap-Download.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap-pause.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap-Play.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap-Tick.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap4-Download.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap4-pause.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap4-Play.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\bootstrap4-Tick.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\fabric-Download.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\fabric-pause.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\fabric-Play.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\fabric-Tick.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\highcontrast-Download.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\highcontrast-pause.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\highcontrast-Play.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\highcontrast-Tick.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\material-Download.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\material-pause.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\material-Play.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\Progressbar\material-Tick.svg" />
+    <None Include="wwwroot\Syncfussion\scripts\range-navigator\default_data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\range-navigator\double_data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\range-navigator\period-data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\range-navigator\stock-data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\samplelist.js" />
+    <None Include="wwwroot\Syncfussion\scripts\schedule\applyCategoryColor.js" />
+    <None Include="wwwroot\Syncfussion\scripts\search-index.js" />
+    <None Include="wwwroot\Syncfussion\scripts\SparkLine\OrderData.js" />
+    <None Include="wwwroot\Syncfussion\scripts\StockChartData\aapl.js" />
+    <None Include="wwwroot\Syncfussion\scripts\StockChartData\aman.js" />
+    <None Include="wwwroot\Syncfussion\scripts\StockChartData\goog.js" />
+    <None Include="wwwroot\Syncfussion\scripts\StockChartData\googl.js" />
+    <None Include="wwwroot\Syncfussion\scripts\StockChartData\indicator-data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\StockChartData\tsla.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeGrid\templateData.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\AirPort_Count.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\CarSales.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\ColorData.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Continent_Data.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Country_Population.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Drilldown.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Economics.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Election.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Imports.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\Medals.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\ProductSale.js" />
+    <None Include="wwwroot\Syncfussion\scripts\TreeMapData\rtl-data.js" />
+    <None Include="wwwroot\Syncfussion\styles\bootstrap.scss" />
+    <None Include="wwwroot\Syncfussion\styles\fabric.scss" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\css.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\excel.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\exclamatory.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\exe.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\folder.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\html.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\image.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\js.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\msi.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\music.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\pdf.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\php.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\ppt.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\rar.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\rtf.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\text.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\video.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\word.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\xml.svg" />
+    <None Include="wwwroot\Syncfussion\styles\file-manager\images\zip.svg" />
+    <None Include="wwwroot\Syncfussion\styles\Grid\Fonts\Grid control Font.svg" />
+    <None Include="wwwroot\Syncfussion\styles\highcontrast.scss" />
+    <None Include="wwwroot\Syncfussion\styles\images\circulargauge\image1.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\circulargauge\image2.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\circulargauge\image3.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\circulargauge\image4.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\circulargauge\image5.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\circulargauge\image6.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Cycling.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\cycling1.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Diastolic.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Exercise Tracking.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\High.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Low.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Moderate.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Pulse.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Running.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\running1.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Systolic.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\Walking.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\lineargauge\walking1.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\maps\cluster.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\maps\compass.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\maps\group.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\maps\map-tooltip.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\maps\oval.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\Preview-label.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\sb-icons\fonts\icons.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\sb-icons\Syncfusion-logo.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\sb-icons\Syncfusion-mobile-logo.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\airplane.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Athletics.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Basketball.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Boxing.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Cycling.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Gymnastics.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Judo.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Rowing.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Shooting.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Soccer.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Swimming.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Tennis.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\TrackAndField.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Triathlon.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Water_polo.svg" />
+    <None Include="wwwroot\Syncfussion\styles\images\treemap\Wrestling.svg" />
+    <None Include="wwwroot\Syncfussion\styles\material.scss" />
+    <None Include="wwwroot\VideoCall.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="Syncfusion.Licensing" Version="22.2.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\Syncfussion\scripts\ej2.d.ts" />
+  </ItemGroup>
+
+</Project>
