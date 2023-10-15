@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
 using ShapeShift.Models;
@@ -39,7 +40,7 @@ namespace ShapeShift.Models
         public async Task<IActionResult> Index()
         {
             return _dbContext.Members != null ?
-                           View(await _dbContext.Members.ToListAsync()) :
+                           View(await _dbContext.Members.Include(t=>t.Trainer).ToListAsync()) :
                            Problem("Entity set 'GymDbcontext.Members'  is null.");
         }
 
@@ -49,18 +50,28 @@ namespace ShapeShift.Models
         [HttpGet]
         public IActionResult AddMemberView()
         {
+           
+            //select methode here is used to project the trainersvin db into annonymous type that includes Fullname and Trainerid .
+            var trainers = _dbContext.Trainers.Select(t => new
+            {
+                TrainerID = t.TrainerID,
+                FullName=t.FirstName +" "+t.LastName
+            })
+                .ToList();
+            ViewData["Trainers"]=new SelectList(trainers, "TrainerID","FullName");
             // Display the "Add Member" form
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddMemberView(int memberId, string firstName, string lastName, string phone, string email)
+        public async Task<IActionResult> AddMemberView(int memberId,int trainerId, string firstName, string lastName, string phone, string email)
         {
             var memberInfo = new Member
             {
                 MemberID = memberId,
                 FirstName = firstName,
                 LastName = lastName,
+                TrainerID=trainerId,
                 Phone = phone,
                 Email = email
             };
@@ -88,9 +99,9 @@ namespace ShapeShift.Models
         }
 
         // Delete member
-        [HttpPost, ActionName("DeleteMember")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmedMember(int memberId)
+        public async Task<IActionResult> DeleteMember(int memberId)
         {
             if (_dbContext.Members == null)
             {
@@ -113,7 +124,7 @@ namespace ShapeShift.Models
             await _dbContext.SaveChangesAsync();
 
             // Redirect to the desired action after successful deletion
-            return RedirectToAction("Index");
+            return RedirectToAction("Index,Admin");
         }
 
 
